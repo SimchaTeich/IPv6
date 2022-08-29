@@ -28,8 +28,8 @@ The attack will be over three virtual machines (NAT network):
 3. In Eve's (attacker) VM all the files in the following directory [here](https://github.com/SimchaTeich/IPv6/tree/main/MITMv6/3%20-%20Eve%20story/attack_files/MITMv6_by_Eve) have to be downloaded.
 
 ### Files Changes
-1. In Alice's VM modify alice_side.py file [here](https://github.com/SimchaTeich/IPv6/blob/main/MITMv6/3%20-%20Eve%20story/attack_files/Alice_side.py) to your own interface and Bob's ip (lines 6 and 10 accordignly) as corresponding to your setup.
-2. In Eve's directory [here](https://github.com/SimchaTeich/IPv6/tree/main/MITMv6/3%20-%20Eve%20story/attack_files/MITMv6_by_Eve) modify the whole network_details.py file as corresponding to your Network's configurations. 
+* In Alice's VM modify alice_side.py file [here](https://github.com/SimchaTeich/IPv6/blob/main/MITMv6/3%20-%20Eve%20story/attack_files/Alice_side.py) to your own interface and Bob's ip (lines 6 and 10 accordignly) as corresponding to your setup.
+* In Eve's directory [here](https://github.com/SimchaTeich/IPv6/tree/main/MITMv6/3%20-%20Eve%20story/attack_files/MITMv6_by_Eve) modify the whole network_details.py file as corresponding to your Network's configurations. 
 
 
 <a name="languages_and_tools"></a>
