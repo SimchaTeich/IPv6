@@ -3,9 +3,12 @@
 import socket
 import time
 
+IFACE = "enp0s3"
+
 KB = 1024
 PORT = 13337
-HOST = "fe80::1eaa:7821:6306:2979%enp0s3"
+BOB_IP = "fe80::1eaa:7821:6306:2979"
+HOST = BOB_IP + "%" + IFACE
 ADDR = HOST, PORT
 
 ALICE_MSGS = ["really? how",
