@@ -1,4 +1,4 @@
-# MITM - ARP POISONING
+# MITMv6 - Instruction Manual
 
 <a name="table_of_contents"></a>
 <details open="open">
