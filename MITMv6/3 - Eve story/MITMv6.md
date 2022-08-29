@@ -23,7 +23,7 @@ The attack will be over three virtual machines (NAT network):
 * The third machine is Eve's machine (the attacker machine).
 
 ### Related Downloads
-1. In Alice's VM the following file [here](IPv6/MITMv6/3 - Eve story/attack_files/Alice_side.py)
+1. In Alice's VM the following file [here](https://github.com/SimchaTeich/IPv6/blob/main/MITMv6/3%20-%20Eve%20story/attack_files/Alice_side.py)
 
 <a name="languages_and_tools"></a>
 ## Languages and Tools <small>[Top▲](#table_of_contents)</small>
