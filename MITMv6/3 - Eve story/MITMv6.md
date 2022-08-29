@@ -16,6 +16,13 @@
 <a name="instructions"></a>
 ## Instructions <small>[Top▲](#instructions)</small>
 
+### Enviroment Setup
+The attack will be over three virtual machines (NAT network):
+* The first machine is Alice's machine 
+* The second machine is Bob's machine
+* The third machine is Eve's machine (the attacker machine).
+
+
 
 
 <a name="languages_and_tools"></a>
