@@ -5,9 +5,6 @@
   <summary>Content</summary>
   <ol>
     <li><a href="#insturctions">Instructions</a></li>
-    <li><a href="#languages_and_tools">Languages and Tools</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-    <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
