@@ -16,7 +16,7 @@ Jump into Alice's and Bob's world to find out all the answers by yourself.
 Have fun! ☺️
 
 <p align="center">
-<img height="215.5" width="350" src="Alice&Bob_world.jpg" />
+<img src="Alice&Bob_World.png" />
 </p>
 
 # Folders Overview
