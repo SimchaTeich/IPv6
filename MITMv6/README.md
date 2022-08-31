@@ -1,6 +1,20 @@
 # 📖 Background Story 📖
 Here you can find the chronological order of our learning process that lead us to implement the MITMv6 attack. 
 
+The learning process is represented as a progressive story, thus it's important to follow the folders' order as shown below.
+
+So, do you want to know why Eve is trying to run away? 😧
+
+or perhaps you want to know which dictator are Alice and Bob rebelling against?! 😲
+
+why is IPv4 sucks?!😨
+
+and why IPv6 sucks too?!🤯
+
+Jump into Alice's and Bob's world to find out all the answers by yourself.
+
+Have fun! ☺️
+
 # Folders Overview
 
 ### 📁Bob Story
