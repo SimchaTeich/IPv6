@@ -5,11 +5,11 @@ The learning process is represented as a progressive story, thus it's important 
 
 So, do you want to know why Eve is trying to run away? 😧
 
-or perhaps you want to know which dictator are Alice and Bob rebelling against?! 😲
+Or perhaps you want to know which dictator are Alice and Bob rebelling against?! 😲
 
-why is IPv4 sucks?! 😨
+Why is IPv4 sucks?! 😨
 
-and why IPv6 sucks too?! 🤯
+And why IPv6 sucks too?! 🤯
 
 Jump into Alice's and Bob's world to find out all the answers by yourself.
 
