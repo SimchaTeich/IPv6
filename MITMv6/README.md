@@ -15,6 +15,10 @@ Jump into Alice's and Bob's world to find out all the answers by yourself.
 
 Have fun! ☺️
 
+<p align="center">
+<img align="center" src="Alice&Bob_world.jpg" />
+</p>
+
 # Folders Overview
 
 ### 📁Bob Story
