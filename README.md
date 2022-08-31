@@ -13,4 +13,4 @@ p{color:Black !important;}
 ## Second Heading
 
 This is a test to see how the colors work.
-- ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
+- ![Overview](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
