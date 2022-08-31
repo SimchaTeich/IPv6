@@ -2,12 +2,14 @@
 Final project in the communication protocols protection course
 
 
+<style>
+H1{color:Blue !important;}
+H2{color:DarkOrange !important;}
+p{color:Black !important;}
+</style>
 
-# ```diff Overview```
-
-<span style="color:orange;">Word up</span>
 # Color Test Document
 
-<style>H1{color:Blue;}</style>
-<style>H2{color:DarkOrange;}</style>
-<style>p{color:Black;}</style>
+## Second Heading
+
+This is a test to see how the colors work.
