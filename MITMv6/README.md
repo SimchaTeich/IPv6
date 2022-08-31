@@ -7,9 +7,9 @@ So, do you want to know why Eve is trying to run away? 😧
 
 or perhaps you want to know which dictator are Alice and Bob rebelling against?! 😲
 
-why is IPv4 sucks?!😨
+why is IPv4 sucks?! 😨
 
-and why IPv6 sucks too?!🤯
+and why IPv6 sucks too?! 🤯
 
 Jump into Alice's and Bob's world to find out all the answers by yourself.
 
