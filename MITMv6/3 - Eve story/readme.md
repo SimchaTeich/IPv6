@@ -1,18 +1,5 @@
 # MITMv6 - Instruction Manual
 
-<a name="table_of_contents"></a>
-<details open="open">
-  <summary>Content</summary>
-  <ol>
-    <li><a href="#insturctions">Instructions</a></li>
-  </ol>
-</details>
-
-----------------
-
-<a name="instructions"></a>
-## Instructions <small>[Top▲](#instructions)</small>
-
 ### Enviroment Setup
 The attack will be over three virtual machines (NAT network):
 * The first machine is Alice's machine 
