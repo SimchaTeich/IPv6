@@ -1,4 +1,4 @@
-# The Goal Of The Project
+# 🎯 Project Goal 🎯
 This project is a final project in the communication protocols protection course.
 From a big list of subjects we have selected the ipv6, to be the research subject. 
 
