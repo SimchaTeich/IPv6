@@ -16,7 +16,7 @@ def build_fake_ping6(victim_ip, target_ip):
 
 def send_fake_ping6(victim_ip, target_ip) -> None:
     """
-    Sends the fake packet (icmp echo request).
+    Sends the fake packet (ICMPv6 echo request).
     :param victim_ip: victim's ip address
     :param target_ip: target's ip address
     :return: None
