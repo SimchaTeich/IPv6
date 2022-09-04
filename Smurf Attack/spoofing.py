@@ -8,7 +8,7 @@ def build_fake_ping6(victim_ip, target_ip):
     :return: the fake built packet.
     """
     ipv6 = IPv6(src=victim_ip, dst=target_ip)
-    icmpv6 = ICMPv6EchoRequest(id=1, seq=1, data='hey')
+    icmpv6 = ICMPv6EchoRequest(id=1, seq=1, data='la')
     return ipv6 / icmpv6
 
 
