@@ -5,7 +5,7 @@ From a big list of subjects we have selected the ipv6, to be the research subjec
 # Folders Overview
 
 ### 📁Attacks Overview
-The folder contains the ipv6 attack overviews, based on multiple academic articles.
+ folder contains the ipv6 attack overviews, based on multiple academic articles.
 
 ### 📁MITMv6
 The folder contains our whole learning process to launch MITMv6 attack.
