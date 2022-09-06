@@ -18,7 +18,7 @@ The folder contains a detection tool for 6to4 tunnel and attempts to create mult
 The folder contains a method to flood target machine with IPv6 DNS data. 
 
 ### 📁Smurf Attack
-The folder contains a ___________
+The folder contains a code and explanation towards smurf attack. 
 
 ### 📁Seed Labs
 The folder contains our seed labs solutions files. 
